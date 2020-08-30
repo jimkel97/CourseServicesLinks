@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
 import Links from './Links'
-import linkData from './linkData.js'
+import linkDataGen from './linkDataGen.js'
 
 function Home() {
-    const linkComponents = linkData.map(link => <Links key={link.id} site={link.site} url={link.url} />)
+    const linkComponents = linkDataGen.map(link => <Links key={link.id} site={link.site} url={link.url} />)
   return (
 
     <div>
